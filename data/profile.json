@@ -1,0 +1,168 @@
+{
+  "login": "HabibPro1999",
+  "name": "Mohamed Habib Soula",
+  "location": "Tunis, Tunisia",
+  "coords": "36.81°N 10.18°E",
+  "status": "Open to new projects",
+  "headline": "Product engineer. Six systems shipped to production in three years.",
+  "subline": "Flutter apps, TypeScript backends and the agentic tooling that ships them, owned end to end from the first client call to the release.",
+
+  "specs": [
+    { "value": "6", "label": ["Systems in production", "4 as sole engineer"] },
+    { "value": "{contributions}", "label": ["Contributions", "last 12 months"] },
+    { "value": "2", "label": ["PRs merged upstream", "oh-my-pi · {ohmypi_stars} stars"] },
+    { "value": "EN FR AR", "label": ["Working languages", "Tunis · remote"] }
+  ],
+
+  "links": [
+    { "id": "linkedin", "label": "LinkedIn", "value": "in/habibsoula", "href": "https://www.linkedin.com/in/habibsoula", "alt": "LinkedIn profile: in/habibsoula" },
+    { "id": "email", "label": "Email", "value": "habibsoulapro@gmail.com", "href": "mailto:habibsoulapro@gmail.com", "alt": "Email habibsoulapro@gmail.com" }
+  ],
+
+  "intro": [
+    "I own products from the first client call to the release: the data model, the Flutter app, the TypeScript backend and the deploy. At **Value Digital Services** I build banking, insurance and HR apps for the BIAT group and its clients. As an independent engineer I build event platforms, booking agents and data pipelines for clients in Tunisia, France and Dubai.",
+    "Most of that code is private client work. The numbers above count it, and the sections below describe it."
+  ],
+
+  "lanes": {
+    "main": { "name": "value", "label": "Value Digital Services — Software Engineer", "since": "Feb 2023 – now" },
+    "indie": { "name": "indie", "label": "Independent — Full-stack & AI Engineer", "since": "Nov 2024 – now" }
+  },
+
+  "career": [
+    { "date": "2026-06", "lane": "indie", "title": "Tunrooms — AI booking agent", "text": "Live on tunrooms.com. Answers renters from 619 real listings and never invents a result.", "ref": "indie" },
+    { "date": "2026-01", "lane": "main", "title": "BIAT Jeune — youth banking platform", "text": "Flutter app on 16 Spring Boot microservices in Kubernetes. Keycloak OTP login, Redis sessions.", "ref": "HEAD → value" },
+    { "date": "2025-12", "lane": "indie", "title": "Focale OS — platform for medical congresses", "text": "Multi-tenant, one subdomain per event. Pricing engine, abstracts → peer review → PDF book." },
+    { "date": "2025-11", "lane": "indie", "title": "B2B lead pipeline — France", "text": "1.2M electricity addresses distilled into 74K scored companies, joined with legal data." },
+    { "date": "2025-01", "lane": "main", "title": "VEEP — white-label HR platform", "text": "Newsfeed, timesheets and leave requests. A client rebrands it with one design-token file." },
+    { "date": "2024-11", "lane": "indie", "title": "EON — fitness studio platform, Dubai", "text": "Sole engineer: Flutter app, Next.js admin, NestJS + Postgres. Onboarding 2 weeks → 2 days.", "fork": true },
+    { "date": "2023-07", "lane": "main", "title": "ESPRIT — engineering degree in computer science", "text": "Master's level, Tunis.", "tag": true },
+    { "date": "2023-02", "lane": "main", "title": "Dima Maak — insurance app for Assurances BIAT", "text": "The official app of the BIAT insurance group, live on the App Store and Google Play.", "root": true }
+  ],
+
+  "projects": [
+    {
+      "id": "budgywell",
+      "name": "Budgywell",
+      "kicker": "FinTech · own product",
+      "visibility": "private",
+      "tagline": "Offline-first budgeting for Tunisia",
+      "text": "Every change is written on the phone first, then synced as idempotent commands into an append-only, double-entry ledger guarded by Postgres row-level security.",
+      "stack": "Flutter · Riverpod · drift · NestJS · Fastify · PostgreSQL",
+      "meta": "703 commits · 285 test files · FR EN AR + Derja"
+    },
+    {
+      "id": "focale",
+      "name": "Focale OS",
+      "kicker": "EventTech · multi-tenant SaaS",
+      "visibility": "public",
+      "tagline": "Operations platform for medical congresses",
+      "text": "Registration, abstracts and peer review, sponsorships, a rule-based pricing engine, certificates and check-in. Outbox worker, SSE realtime, concurrency-tested.",
+      "stack": "Bun · Fastify · Prisma · CockroachDB · React",
+      "meta": "806 commits · 440 test files · CI",
+      "href": "https://github.com/HabibPro1999/focale-backend/tree/develop",
+      "where": "the focale-backend repository on GitHub"
+    },
+    {
+      "id": "shiplog",
+      "name": "Shiplog",
+      "kicker": "Open source · developer tooling",
+      "visibility": "public",
+      "tagline": "AI coding sessions → one shareable HTML file",
+      "text": "Finds sessions from Claude Code, Codex, Aider, OpenCode and Amazon Q, then renders a self-contained log with grouped tool calls and syntax highlighting.",
+      "stack": "Go · Bubble Tea · GoReleaser · Homebrew",
+      "meta": "{shiplog_releases} releases · {shiplog_stars} stars · brew install",
+      "href": "https://github.com/HabibPro1999/shiplog",
+      "where": "the shiplog repository on GitHub"
+    },
+    {
+      "id": "liquid",
+      "name": "Liquid Glass",
+      "kicker": "Open source · rendering",
+      "visibility": "public",
+      "tagline": "Apple-style Liquid Glass for Flutter",
+      "text": "Runtime GLSL fragment shaders, five SDF shapes, a stable-fluids simulation and adaptive rendering tiers with accessible fallbacks.",
+      "stack": "Flutter · Dart · GLSL · Kotlin",
+      "meta": "36 commits · 10 test files · example app",
+      "href": "https://github.com/HabibPro1999/liquid_glass",
+      "where": "the liquid_glass repository on GitHub"
+    },
+    {
+      "id": "ohmypi",
+      "name": "oh-my-pi",
+      "kicker": "Upstream contribution",
+      "visibility": "merged",
+      "tagline": "On-demand tool discovery for a coding agent",
+      "text": "Merged #916: the agent starts with four tools and finds the rest by BM25 search, which cuts about 11k tokens from the first prompt. Also merged #833.",
+      "stack": "TypeScript · Bun · BM25 retrieval",
+      "meta": "+2,278 −357 merged · {ohmypi_stars} stars upstream",
+      "href": "https://github.com/can1357/oh-my-pi/pull/916",
+      "where": "pull request 916 in can1357/oh-my-pi"
+    },
+    {
+      "id": "fatoura",
+      "name": "fatoura-cli",
+      "kicker": "Open source · local tool",
+      "visibility": "public",
+      "tagline": "Clean PDF invoices for Tunisian freelancers",
+      "text": "A terminal CLI and a local web UI. Saves your profile, clients and services once, numbers every invoice, and prints amounts as 13 750,000 DT.",
+      "stack": "Python · WeasyPrint · Flask",
+      "meta": "3 releases · MIT",
+      "href": "https://github.com/HabibPro1999/fatoura-cli",
+      "where": "the fatoura-cli repository on GitHub"
+    }
+  ],
+
+  "also": [
+    ["CRM Énergie", "Self-hosted CRM for a French energy broker: AI invoice OCR with human review, e-signature mandates, telephony, row-level security per role", "React 19 · NestJS · PostgreSQL · BullMQ"],
+    ["Ayplan", "Booking backend for a tourism and events operator: Konnect payments, outbox worker, 123 test files, OpenAPI snapshot test", "NestJS · Fastify · Drizzle"],
+    ["Qidzy", "Learning app for children: in-app purchases, golden tests, Arabic and English", "Flutter · NestJS · CockroachDB"],
+    ["Ezzou", "Course platform monorepo where API contract drift fails the frontend build", "NestJS · Next.js 15 · Vite"]
+  ],
+
+  "ship": [
+    { "n": "01", "name": "Grill", "text": ["Question the request", "until nothing is", "ambiguous."] },
+    { "n": "02", "name": "Spec", "text": ["PRD with testable", "EARS acceptance", "criteria."] },
+    { "n": "03", "name": "Build", "text": ["Parallel agent panes,", "split along the code's", "natural seams."] },
+    { "n": "04", "name": "Review", "text": ["Effort sized to the", "diff, plus a second", "model as a gate."] },
+    { "n": "05", "name": "Ship", "text": ["Green by exit code,", "never by a model's", "opinion."] }
+  ],
+  "ship_tools": "Tools I wrote for this loop: assay (public) · cmax · mate · fob · figma-fidelity",
+  "ship_note": "I use coding agents every day, and I treat their output like a pull request from a new teammate: specified first, reviewed twice, merged only when the checks pass. The public version of this loop is [assay, a Claude Code skill](https://github.com/HabibPro1999/assay).",
+
+  "oss": [
+    ["oh-my-pi #916", "https://github.com/can1357/oh-my-pi/pull/916", "Merged. On-demand BM25 tool discovery for a coding agent with {ohmypi_stars} stars (+1,927 −338)", "TypeScript"],
+    ["oh-my-pi #833", "https://github.com/can1357/oh-my-pi/pull/833", "Merged. Provider response extension hook (+351 −19)", "TypeScript"],
+    ["shiplog", "https://github.com/HabibPro1999/shiplog", "AI coding sessions to one HTML file. Install with `brew install HabibPro1999/tap/shiplog`", "Go"],
+    ["assay", "https://github.com/HabibPro1999/assay", "Claude Code skill: from a vague request to merge-ready code, with machine-owned gates", "Agent skill"],
+    ["liquid_glass", "https://github.com/HabibPro1999/liquid_glass", "Liquid Glass surfaces for Flutter: GLSL shaders, SDF shapes, fallbacks", "Dart · GLSL"],
+    ["fatoura-cli", "https://github.com/HabibPro1999/fatoura-cli", "PDF invoices for Tunisian freelancers, from the terminal or a local web UI", "Python"],
+    ["claude-collab", "https://github.com/HabibPro1999/claude-collab", "Ask a teammate's Claude Code session a question. Published on npm", "TypeScript"],
+    ["team-monitor", "https://github.com/HabibPro1999/team-monitor", "Live dashboard for Claude Code agent teams", "Bun · React"],
+    ["dart_modernizer", "https://github.com/HabibPro1999/dart_modernizer", "Codemod to new Dart features; the analyzer re-checks every edit", "Dart"]
+  ],
+
+  "stack": [
+    ["Mobile", "Flutter, Dart, Riverpod, Bloc, Stacked, drift (SQLite), GLSL shaders"],
+    ["Backend", "TypeScript, NestJS, Fastify, Bun, Spring Boot, Java, Go, Rust"],
+    ["Data", "PostgreSQL with row-level security, Drizzle, Prisma, CockroachDB, Redis, BullMQ, Firebase"],
+    ["Web", "React, Next.js, Vite, Astro, Tailwind CSS, shadcn/ui, Refine"],
+    ["Infra", "Docker, Kubernetes, Caddy, GitHub Actions, AWS, Cloudflare R2, Sentry"],
+    ["AI", "Claude Code, Codex, MCP servers, RAG with pgvector, LLM APIs, n8n"]
+  ],
+
+  "languages": {
+    "note": "Share of code by bytes across 87 original repositories, public and private",
+    "items": [
+      ["TypeScript", 70.2],
+      ["Dart", 12.2],
+      ["HTML + CSS", 6.9],
+      ["JavaScript", 4.0],
+      ["Shell", 1.9],
+      ["SQL", 1.8],
+      ["Python", 1.0],
+      ["Go + Rust", 0.8],
+      ["Other", 1.2]
+    ]
+  }
+}
