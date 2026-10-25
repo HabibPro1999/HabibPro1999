@@ -1,8 +1,7 @@
 {
-  "fetched_at": "2026-10-24",
+  "fetched_at": "2026-10-25",
   "contributions": 4248,
   "weeks": [
-    13,
     0,
     4,
     0,
@@ -54,10 +53,11 @@
     652,
     287,
     223,
-    645
+    645,
+    0
   ],
-  "streak": 32,
-  "ohmypi_stars": 36415,
+  "streak": 0,
+  "ohmypi_stars": 36511,
   "shiplog_stars": 7,
   "shiplog_releases": 5
 }
